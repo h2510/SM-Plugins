@@ -66,19 +66,19 @@ public Action:Command_SpawnVehicle(client, args){
 		spawncommand = "ch_createvehicle"
 		commandFlag = GetCommandFlags(spawncommand)
 	   	SetCommandFlags(spawncommand, (commandFlag & ~FCVAR_CHEAT))
-		Format(command, sizeof(command),"sm_fexec \"%s\" \"ch_createvehicle prop_vehicle_mp models/vehicles/7seatvan.mdl scripts/vehicles/van.txt\"", name)
+		Format(command, sizeof(command),"sm_fexec \"%s\" \"ch_createvehicle prop_vehicle_mp models/vehicles/7seatvan.mdl scripts/vehicles/van2.txt\"", name)
 	}
 	if (strcmp(vehicle, "jeep") == 0){
 		spawncommand = "ch_createvehicle"
 		commandFlag = GetCommandFlags(spawncommand)
 		SetCommandFlags(spawncommand, (commandFlag & ~FCVAR_CHEAT))
-		Format(command, sizeof(command),"sm_fexec \"%s\" \"ch_createvehicle prop_vehicle_jeep models/vehicles/7seatvan.mdl scripts/vehicles/van.txt\"", name)
+		Format(command, sizeof(command),"sm_fexec \"%s\" \"ch_createvehicle prop_vehicle_jeep models/vehicles/7seatvan.mdl scripts/vehicles/van3.txt\"", name)
 	}
 	if (strcmp(vehicle, "jeep_elite") == 0){
 		spawncommand = "ch_createvehicle"
 		commandFlag = GetCommandFlags(spawncommand)
 	   	SetCommandFlags(spawncommand, (commandFlag & ~FCVAR_CHEAT))
-		Format(command, sizeof(command),"sm_fexec \"%s\" \"ch_createvehicle prop_vehicle_mp models/vehicles/7seatvan.mdl scripts/vehicles/van.txt\"", name)
+		Format(command, sizeof(command),"sm_fexec \"%s\" \"ch_createvehicle prop_vehicle_mp models/vehicles/7seatvan.mdl scripts/vehicles/van4.txt\"", name)
 	}
 	
 	ServerCommand(command)
